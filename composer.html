@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>World News</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body {width:1024px;height:1024px;margin:0;padding:0;font-family:Georgia,serif;background:#0f0f1a;color:#e6e6e6;overflow:hidden;line-height:normal;display:flex;flex-direction:column}
+    .gold{color:#d4af37}.blue{color:#1e3a8a}.muted{color:#6b6b80}
+    .tag{font-size:11px;text-transform:uppercase;letter-spacing:1px;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+    .tag-us{background:rgba(42,26,75,0.8);color:#d4af37}
+    .tag-eu{background:rgba(30,42,75,0.8);color:#a8d4ff}
+    .tag-as{background:rgba(27,46,79,0.8);color:#ffd4a8}
+    .tag-me{background:rgba(58,30,75,0.8);color:#ffb46b}
+    .tag-sg{background:rgba(46,42,30,0.8);color:#c4d4a8}
+    .tag-gs{background:rgba(74,47,47,0.8);color:#d4c4a8}
+    .headline{font-size:26px;font-weight:bold;margin:6px 0 6px;letter-spacing:-0.5px}
+    .lead-headline{font-size:34px;font-weight:bold;margin:8px 0 6px;letter-spacing:-1px}
+    .summary{font-size:16px;margin-bottom:10px}
+    .tag,.headline,.summary,.lead-headline{display:block}
+    .lead-card{background:#1a1a2e;padding:18px 30px;border-radius:6px;width:100%}
+    main{gap:16px;padding:16px 40px}
+    .date-text{font-size:40px;font-weight:bold;color:#d4af37;text-shadow:0 2px 4px rgba(0,0,0,0.5);text-align:right;line-height:1.15}
+    .story-card{
+      background:#1e1e2f;padding:20px;border-radius:6px;display:flex;flex-direction:column;justify-content:center;gap:12px;height:100%
+    }
+    .footer{
+      height:40px;background:#0a0a12;padding:0 40px;display:flex;align-items:center;font-size:12px;color:#6b6b80
+    }
+  </style>
+</head>
+<body>
+  <div class="date-banner">
+    <span class="gold" style="font-size:24px; margin-right:auto;">THE WORLD</span>
+    <span class="date-text">TUESDAY, NOVEMBER 24, 2026</span>
+  </div>
+  <div class="lead-card">
+    <span class="tag tag-us">US / Tech-Economy</span>
+    <span class="headline lead-headline">Nvidia's board reinstates Jensen Huang as CEO</span>
+    <span class="summary">NVDA stock surged ~31-35% and the Nasdaq jumped after President Trump claimed he persuaded the board; Democrats demand an investigation.</span>
+  </div>
+  <main style="flex:1; display:grid; grid-template-columns:repeat(3, 1fr); grid-template-rows:repeat(2, 1fr); gap:20px; padding:0 40px;">
+    <div class="story-card">
+      <span class="tag tag-eu">Europe / War</span>
+      <span class="headline">Ukrainian naval drones sink Russian corvette off Libya</span>
+      <span class="summary">Kyiv confirms strike extends reach beyond the battlefield; Zelenskyy announces operation.</span>
+    </div>
+    <div class="story-card">
+      <span class="tag tag-gs">Global / Climate</span>
+      <span class="headline">COP31 climate summit ends without agreement</span>
+      <span class="summary">First failure in 17 years at Antalya; delegations trade blame over fossil-fuel language.</span>
+    </div>
+    <div class="story-card">
+      <span class="tag tag-me">Middle East / Security</span>
+      <span class="headline">Deadly fire at Indonesian confectionery factory</span>
+      <span class="summary">At least 24 killed, dozens missing; rescue operations continue in Banten.</span>
+    </div>
+    <div class="story-card">
+      <span class="tag tag-sg">Middle East / Security</span>
+      <span class="headline">Iran vows response to US naval blockade</span>
+      <span class="summary">Iran threatens 'all available means' as US investigates cyberattacks on oil ships.</span>
+    </div>
+    <div class="story-card">
+      <span class="tag tag-gs">Global / Sport</span>
+      <span class="headline">FIFA awards 2031 Women's World Cup</span>
+      <span class="summary">Tournament assigned to USA-Mexico-Costa Rica-Jamaica; UK nations confirmed for 2035.</span>
+    </div>
+    <div class="story-card">
+      <span class="tag tag-gs">GLOBAL/MARKETS</span>
+      <span class="headline">Nasdaq rallies on Nvidia news</span>
+      <span class="summary">NVDA +31-35%</span>
+    </div>
+  </main>
+  <div class="footer">World news of 24 November 2026 · compiled by an autonomous agent</div>
+</body>
+</html>
